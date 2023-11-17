@@ -238,30 +238,21 @@
                 <article>
                     <header>
                         <span class="date">May 21, 2023</span>
-                        <h2><a href="https://hajekel.github.io/BrightSight/">BrightSight<br />
+                        <h2><a>BSc Thesis: BrightSight<br />
                             </a></h2>
-                        <h3> UNLOCKING THE VISUAL WORLD: HARNESSING THE LOTTERY TICKET HYPOTHESIS FOR
-                            STATE-OF-THE-ART MONOCULAR DEPTH ESTIMATION IN EMBEDDED GLASSES TO EMPOWER THE VISUALLY
-                            IMPAIRED.</h3>
+                        <h3> The use of deep learning for person detection and gender classification
+                            using RGB images to support the visually impaired.</h3>
                     </header>
                     <a class="image fit"><img
                             src="images/brightsight_implementation.png" alt="" /></a>
-                    <p>In this research, I introduce a method to compress state-of-the-art depth estimators using the
-                        lottery ticket hypothesis. My objective is to enable real-time depth estimation on embedded
-                        glasses, thereby facilitating safe navigation for visually impaired individuals. By employing
-                        transformer backbones instead of convolutional networks, my proposed approach, MiDaS v3.0 DPT-L,
-                        revolutionizes dense vision estimation. However, I encountered challenges in directly
-                        implementing MiDaS or Adabins on embedded glasses, such as low FPS on single board computers.
-                        The main motivation behind this project is to empower visually impaired individuals to navigate
-                        unfamiliar environments and avoid obstacles. As a proof of concept, I implemented the pruned
-                        model on a Raspberry Pi Model 3B. The model determines the optimal steering angle by analyzing a
-                        horizontal strip of average bins and evaluating three criteria based on the generated depth map.
-                        My research aims to demonstrate the feasibility of incorporating haptic feedback for obstacle
-                        avoidance into existing glasses for the visually impaired, utilizing their single board computer
-                        monocular camera products. The experimental results I obtained demonstrate that achieving an FPS
-                        of 20 is feasible. MiDaS exhibits the most promising performance due to its higher accuracy at
-                        this frame rate, thereby highlighting the potential for enhancing the functionality of glasses
-                        for the visually impaired.</p>
+                    <p>This paper presents the deep learning approach to help the visually impaired in an object detection
+                        task: recognising the gender of people in their proximate surrounding. By use of images coming from a RPI
+                        WWCAM2 monocular camera, the person is first detected , i.e. localized in the image, and then classified to
+                        one of the two genders. In order to perform gender detection in real-time, the use of transfer learning together
+                        with a single-stage object detection algorithm was investigated. Based on the number of processed frames per
+                        second (FPS) and the mean average precision (mAP), it was concluded that fine-tuning a pre-trained YOLOv4
+                        algorithm on customized versions of the Pascal VOC 2007 dataset and the CelebA dataset is best suited for this
+                        task.</p>
                     <ul class="actions special">
                         <li><a href="#" class="https://hajekel.github.io/BrightSight/">View Project</a></li>
                     </ul>
