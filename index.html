@@ -78,68 +78,17 @@
             <article class="post featured">
                 <header class="major">
                     <span class="date">October 30, 2022</span>
-                    <h2><a href="#">Autonomous driving<br />
-                            ROS</a></h2>
+                    <h2><a>Pathfinder Prius: Navigating the Future with ROS-Powered Autonomous Driving<br />
+                            </a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="images/prius_project.png" alt="prius_project" /></a>
+                <a class="image fit"><img src="images/prius_project.gif" alt="prius_project" /></a>
 
-                <p>In this university assignment, I developed software for autonomous driving
-                    of a Prius vehicle in a simulated test track utilizing the Robot Operating
-                    System (ROS). The Prius was equipped with two primary sensors, a front-facing
-                    camera located behind the windshield and a 360-degree top-mounted LIDAR sensor.
-                    The vehicle's system received the camera images and LIDAR point clouds as ROS topics.
-                </p>
-
-                <p>
-                    The objective of this study was to design a virtual, controllable Prius vehicle that could
-                    detect obstacles and pedestrians using its sensors, and subsequently maneuver autonomously along
-                    a path defined by cones, avoiding all obstacles. Additionally, the vehicle was required to stop
-                    in the presence of pedestrians.
-                </p>
-                <p>
-                    For this study, the university supplied a simulation platform comprised of a virtual vehicle and
-                    environment. To accomplish the autonomous driving task, we implemented three additional ROS
-                    packages as the solution.
-                </p>
-                <div class="row">
-
-
-                    <ul>
-                        <li>As part of the solution, we created an "opencv_person_detector" package that contained a
-                            node capable of detecting 2D bounding boxes around all individuals in a camera image
-                            through
-                            the use of OpenCV.</li>
-                        <li>Additionally, we developed a "pcl_obstacle_detector" package that included a node for
-                            detecting 3D bounding boxes around all barrels present in the LIDAR point cloud through
-                            the
-                            use of Point Cloud Library (PCL).</li>
-                        <li>Finally, we created a "control_barrel_world" package that comprised a node responsible
-                            for
-                            controlling the vehicle. This node subscribed to both the 3D barrel detections and 2D
-                            person
-                            detections, and published control messages to drive the vehicle.</li>
-
-                    </ul>
-
-                </div>
-                <p>
-                    The accompanying illustration showcases the topics and nodes incorporated in the solution.
-                </p>
-                <a href="#" class="image fit"><img src="images/prius_solution.png" alt="prius_project" /></a>
-
-                <p>The source code for this project must be kept confidential. A recording of the functioning simulation
-                    after the implementation of the solution is provided below, albeit with some lag in the display due
-                    to the GIF format.</p>
-                <a href="#" class="image fit"><img src="images/prius_project.gif" alt="prius_project" /></a>
-
-
+                <p>In this university project, a Prius vehicle was programmed for autonomous driving in a simulated environment using the Robot Operating System (ROS). The vehicle was equipped with a front-facing camera and a 360-degree LIDAR sensor for detecting obstacles and pedestrians. The project involved developing three ROS packages: "opencv_person_detector" for detecting individuals in camera images, "pcl_obstacle_detector" for identifying obstacles in LIDAR point clouds, and "control_barrel_world" for vehicle control based on sensor inputs. The goal was to autonomously navigate a path marked by cones, avoiding obstacles and stopping for pedestrians. The project is showcased in a simulation video.</p>
                 <ul class="actions special">
-                    <li><a href="#" class="button large">View project</a></li>
+                    <li><a href="https://hajekel.github.io/AUTONOMOUS_DRIVING_ROS" class="button large">View project</a></li>
                 </ul>
 
             </article>
-            There are some commented-out code blocks that contain alternative models (DenseNet-169, DenseNet-121) and
-            training configurations for different datasets.
 
 
             <!-- Posts -->
@@ -148,18 +97,13 @@
                 <article>
                     <header>
                         <span class="date">Januari 20, 2022</span>
-                        <h2><a>RRT* motion planning<br />
-                                for a mobile robot<br />
-                                in a Parking lot scenario</a></h2>
+                        <h2><a>Smart Parking: Navigating the Future with RRT and RRT* Algorithms</a></h2>
                     </header>
                     <a class="image fit"><img src="images/rrt_.gif" alt="" /></a>
-                    <p>Both the RRT and RRT* single query path planning algorithms were implemented for a mobile robot
-                        in a parking lot scenario without utilizing a planner module, and their results were analyzed.
-                        The robot, represented through a kinematic bicycle model, was able to follow the computed path
-                        with the assistance of a PD controller. The simulation was conducted using the Pygame platform.
+                    <p>This project presents an implementation and comparison of two motion planning algorithms, RRT and RRT*, for autonomously navigating a robot in a parking lot scenario. Using a kinematic bicycle model and a PD controller, the algorithms were developed to guide the robot around static obstacles. The findings indicate that while RRT* generates shorter paths, it requires more computational time compared to RRT. The study concludes with suggestions for future enhancements using advanced variants of these algorithms.
                     </p>
                     <ul class="actions special">
-                        <li><a href="website" class="button">View Project</a></li>
+                        <li><a href="https://hajekel.github.io/AUTONOMOUS_DRIVING_ROS" class="button">View Project</a></li>
                     </ul>
                 </article>
                 <article>
@@ -254,7 +198,7 @@
                         algorithm on customized versions of the Pascal VOC 2007 dataset and the CelebA dataset is best suited for this
                         task.</p>
                     <ul class="actions special">
-                        <li><a href="#" class="https://hajekel.github.io/BrightSight/">View Project</a></li>
+                        <li><a href="https://hajekel.github.io/BrightSight/" class="button">View Project</a></li>
                     </ul>
                 </article>
                 <article>
@@ -289,7 +233,7 @@
                     <a  class="image fit"><img src="images/presentproduct.jpg"  alt="" /></a>
                     <p>The Albert project developed a versatile robotic system for supermarkets, designed to handle both online and in-store customer orders. Featuring an advanced ChatGPT-powered voice interaction system, Albert efficiently processes and responds to customer requests. Its autonomous capabilities include identifying, picking, and placing products, managed by the FlexBE state machine. Equipped with sensors like lidar and stereo cameras, it navigates safely around obstacles and customers. While testing has shown promising results in both simulations and real-world scenarios, further refinement is necessary to address remaining challenges before widespread implementation in supermarkets.</p>
                     <ul class="actions special">
-                        <li><a href="#" class="button">View Project</a></li>
+                        <li><a href="https://hajekel.github.io/cor_mdp_ahold" class="button">View Project</a></li>
                     </ul>
                 </article>
                 <article>
@@ -307,9 +251,9 @@
             </section>
 
             <!-- Footer -->
-            <footer>
+            <!-- <footer>
                 <div class="pagination">
-                    <!--<a href="#" class="previous">Prev</a>-->
+                    <a href="#" class="previous">Prev</a>
                     <a href="#" class="page active">1</a>
                     <a href="#" class="page">2</a>
                     <a href="#" class="page">3</a>
@@ -319,7 +263,7 @@
                     <a href="#" class="page">10</a>
                     <a href="#" class="next">Next</a>
                 </div>
-            </footer>
+            </footer> -->
 
         </div>
 
@@ -334,7 +278,7 @@
 
                 <section>
                     <h3>Email</h3>
-                    <p><a href="#">hendrikjekel@gmail.com</a></p>
+                    <p><a >hendrikjekel@gmail.com</a></p>
                 </section>
                 <section>
                     <h3>Social</h3>
